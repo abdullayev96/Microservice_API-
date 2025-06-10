@@ -5,11 +5,11 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media
+polls/media
 /post/test
 /static/
 /staticfiles/
-/media/
+/polls/media/
 /mediafiles/
 # environment variables in .env
 .env

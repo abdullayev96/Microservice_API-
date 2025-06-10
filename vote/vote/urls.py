@@ -1,11 +1,11 @@
 from django.contrib import admin
-from django.urls import path
-from .views import VoteAPIView
+from django.urls import path,include
+
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vote/', VoteAPIView.as_view()),
+    path('api/', include('votes.urls')),
 ]
 
