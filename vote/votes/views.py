@@ -7,18 +7,18 @@ from django.http import JsonResponse
 
 
 
-class VoteAPIView(generics.ListAPIView):
+class VoteAPIView(generics.ListCreateAPIView):
 	queryset = Vote.objects.all()
 	serializer_class = VoteSerializer
 
 
 
-
-def test_question_service(request):
+def test_question_service(request, pk):
     try:
-        response = requests.get("http://127.0.0.1:8002/api/question/2/")
+        response = requests.get(f"http://127.0.0.1:8002/api/question/{pk}/")
         print("Status:", response.status_code)
         print("Response:", response.text)
+
 
         if response.status_code != 200:
             return JsonResponse({

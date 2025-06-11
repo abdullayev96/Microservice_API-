@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/question" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vote" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (Microservice_django)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (Microservice_API-)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

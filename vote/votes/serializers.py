@@ -13,7 +13,7 @@ class VoteSerializer(serializers.ModelSerializer):
     def get_question_data(self, obj):
         try:
             response = requests.get(f'http://127.0.0.1:8002/api/question/{obj.question_id}/')
-            print(response.json())
+            print(response.json(), "hello")
             if response.status_code == 200:
                 return response.json()
         except Exception:
